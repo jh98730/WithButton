@@ -21,10 +21,21 @@ struct ContentView: View {
                 .font(.title)
                 .fontWeight(.heavy)
                 .foregroundStyle(.red)
-            Button("Click Me!") {
-                message = "Changed with @State"
-                //print(message)
+            HStack {
+                Button("Awesome!") {
+                    message = "Awesome!"
+                }
+                .buttonStyle(.borderedProminent)
+                .font(.title2)
+                .tint(.orange)
+  
+            Button("Great!") {
+                message = "Great!"
             }
+            .buttonStyle(.borderedProminent)
+            .font(.title2)
+            .tint(.orange)
+        }
 
         }
         .padding()
